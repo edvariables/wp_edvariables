@@ -1,0 +1,202 @@
+/**
+ * ED20230212
+ * Feuille de styles pour les calendriers et listes de covoiturages dans l'Agenda partagé
+ */
+
+
+.edv-covoiturages-list ul {
+	padding-bottom: 1em;
+	list-style: none;
+}
+ 
+.edv-covoiturages-list > ul > li {
+	padding-bottom: 1em;
+}
+ 
+.edv-covoiturages-list > ul > li .toggle-trigger.no-items {
+	background-image: url('../images/toggle-minus.png');
+	color: #738080;
+}
+body.colors-dark .edv-covoiturages-list > ul > li .toggle-trigger.no-items {
+	color: #8c7f7f;
+}
+ 
+.edv-covoiturages-list > ul > li .nb-items {
+	font-size: smaller;
+	color: #8c7f7f;
+	vertical-align: top;
+}
+body.colors-dark .edv-covoiturages-list > ul > li .nb-items {
+	color: #738080;
+}
+
+.edv-covoiturages-list > ul > li > .toggle-container .toggle-container {
+	border-bottom: 1px solid gray;
+	margin-bottom: 1em;
+	margin-right: -8px;
+	padding-bottom: 0px;
+}
+
+.edv-covoiturages-list > ul > li .edv-scrolled-to,
+.edv-covoiturages-list > ul > li .edv-scrolled-to + .toggle-container {
+	background-color: #ddddd0;
+}
+body.colors-dark .edv-covoiturages-list > ul > li .edv-scrolled-to,
+body.colors-dark .edv-covoiturages-list > ul > li .edv-scrolled-to + .toggle-container {
+	background-color: #373733;
+}
+.edv-covoiturages-list .toggle-trigger {
+	border-radius: 2px;
+	background-color: #d7d7d7;
+}
+body.colors-dark .edv-covoiturages-list .toggle-trigger {
+	background-color: #272727;
+}
+
+.edv-covoiturages-list > ul > li > .toggle-container {
+	border-radius: 2mpx;
+	padding: 2px 0px;
+	margin-left: 10px;
+}
+.edv-covoiturages-list > ul > li .show-post {
+	position:relative;
+}
+.edv-covoiturages-list > ul > li .show-post a {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.edv-covoiturages-list a {
+  box-shadow: none !important;
+}
+
+.edv-covoiturages-list > ul ul > li {
+	margin-top: 3px;
+	margin-bottom: 6px;
+}
+.edv-covoiturages-list > ul > li .covoiturage-categories,
+.edv-covoiturages-list > ul > li .covoiturage-cities {
+	font-size: smaller;
+}
+.edv-covoiturages-list > ul > li .covoiturage-cities {
+	display: inline-block;
+	margin-left: 1em;
+}
+.edv-covoiturages-list > ul > li .dates {
+	font-weight: bold;
+}
+.edv-covoiturages-list > ul > li pre {
+	white-space: pre-wrap;
+}
+.edv-covoiturages-list > ul > li .cov-siteweb a {
+	text-decoration: underline;
+}
+.edv-covoiturages-list > ul > li .created-since {
+	text-align: right;
+	font-style: italic;
+	font-size: smaller;
+}
+
+.edv-covoiturages-list .show-more {
+	font-style: italic;
+}
+.toggle-trigger.month-title {
+	font-variant:  small-caps;
+	font-weight: bold;
+	font-size: larger;
+	background-color: #e1e9f7;
+	padding-top: 10px;
+}
+body.colors-dark .toggle-trigger.month-title {
+	background-color: rgb(51, 51, 51);
+}
+
+.toggle-trigger.month-title::first-letter {
+	text-transform: uppercase  ;
+}
+.edv-covoiturages-list > ul > li .footer, .edv-covoiturages-list > ul > li .footer table {
+	font-size: 90%;
+	margin-top: 1em;
+    width: 100%;
+}
+.edv-covoiturages-list > ul > li .footer table tr{
+    border: none;
+}
+.edv-covoiturages-list > ul > li .footer table td{
+    white-space: nowrap;
+    border: none;
+}
+.edv-covoiturages-list > ul > li .footer td.post-edit {
+	width: 1px;/*Ajuste la cellule*/
+	padding-right: 14px;
+}
+.edv-covoiturages-list > ul > li .footer .trigger-collapser,
+.edv-covoiturages-list .toggle-trigger {
+	cursor: pointer;
+}
+
+.edv-covoiturages-list-header {
+	margin-bottom: 2em;
+}
+.edv-covoiturages-list-header table {
+	margin: 0;
+}
+.edv-covoiturages-list-header table tr,
+.edv-covoiturages-list-header table th {
+	border: none;
+}
+.edv-covoiturages-list-header table th {
+	width: 1px; /* autosize */
+	padding-right: 1em;
+	overflow-wrap: break-word;
+}
+.edv-covoiturages-list-header table td {
+	text-align: right;
+}
+.edv-covoiturages-list-header .toggle-trigger {
+	font-size: smaller;
+}
+.edv-covoiturages-list-header form {
+	background-color: #dddddd;
+}
+body.colors-dark .edv-covoiturages-list-header form {
+	background-color: #373733;
+}
+.edv-covoiturages-list-header form input[type="submit"] {
+	float: right;
+	font-size: smaller;
+}
+.edv-covoiturages-list-header form select {
+	height: 5em;
+	font-size: smaller;
+}
+.edv-covoiturages-list-header form input[type="checkbox"] {
+	margin-right: 0.2em;
+}
+.edv-covoiturages-list-header form label {
+	font-size: smaller;
+	font-weight: normal;
+	display: inline-block;
+	margin-right: 1em;
+	white-space: nowrap;
+}
+.edv-covoiturages-list-header form label[for] {
+	font-weight: bold;
+	display: block;
+}
+
+.edv-covoiturages-email *, .aevs-email * {
+	background-color: #FFFFFF ;
+	color: #000000 !important;
+}
+body.colors-dark .edv-covoiturages-email *, body.colors-dark .aevs-email * {
+	background-color: #FFFFFF;
+	color: #000000 !important;
+}
+
+.edv-covoiturages .cov-date-jour-num {
+	font-weight: bold;
+	font-size: larger;
+	padding: 0 3px 0 3px;
+}

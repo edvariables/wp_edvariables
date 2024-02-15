@@ -1,0 +1,10 @@
+.htaccess
+
+admin/docs/*
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+*.bak
+*.nppws

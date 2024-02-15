@@ -1,0 +1,196 @@
+/**
+ * ED20230212
+ * Feuille de styles pour les calendriers et listes d'évènements Agenda partagé
+ */
+
+
+.edv-edposts-list ul {
+	padding-bottom: 1em;
+	list-style: none;
+}
+ 
+.edv-edposts-list > ul > li {
+	padding-bottom: 1em;
+}
+ 
+.edv-edposts-list > ul > li .toggle-trigger.no-items {
+	background-image: url('../images/toggle-minus.png');
+	color: #738080;
+}
+body.colors-dark .edv-edposts-list > ul > li .toggle-trigger.no-items {
+	color: #8c7f7f;
+}
+ 
+.edv-edposts-list > ul > li .nb-items {
+	font-size: smaller;
+	color: #8c7f7f;
+	vertical-align: top;
+}
+body.colors-dark .edv-edposts-list > ul > li .nb-items {
+	color: #738080;
+}
+
+.edv-edposts-list > ul > li > .toggle-container .toggle-container {
+	border-bottom: 1px solid gray;
+	margin-bottom: 1em;
+	margin-right: -8px;
+	padding-bottom: 0px;
+}
+
+.edv-edposts-list > ul > li .edv-scrolled-to,
+.edv-edposts-list > ul > li .edv-scrolled-to + .toggle-container {
+	background-color: #ddddd0;
+}
+body.colors-dark .edv-edposts-list > ul > li .edv-scrolled-to,
+body.colors-dark .edv-edposts-list > ul > li .edv-scrolled-to + .toggle-container {
+	background-color: #373733;
+}
+.edv-edposts-list .toggle-trigger {
+	border-radius: 2px;
+	background-color: #d7d7d7;
+}
+body.colors-dark .edv-edposts-list .toggle-trigger {
+	background-color: #272727;
+}
+
+.edv-edposts-list > ul > li > .toggle-container {
+	border-radius: 2mpx;
+	padding: 2px 0px;
+	margin-left: 10px;
+}
+.edv-edposts-list > ul > li .show-post {
+	position:relative;
+}
+.edv-edposts-list > ul > li .show-post a {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.edv-edposts-list a {
+  box-shadow: none !important;
+}
+
+.edv-edposts-list > ul ul > li {
+	margin-top: 3px;
+	margin-bottom: 6px;
+}
+.edv-edposts-list > ul > li .edpost-categories,
+.edv-edposts-list > ul > li .edpost-cities {
+	font-size: smaller;
+}
+.edv-edposts-list > ul > li .edpost-cities {
+	display: inline-block;
+	margin-left: 1em;
+}
+.edv-edposts-list > ul > li .dates {
+	font-weight: bold;
+}
+.edv-edposts-list > ul > li pre {
+	white-space: pre-wrap;
+}
+.edv-edposts-list > ul > li .edp-siteweb a {
+	text-decoration: underline;
+}
+.edv-edposts-list > ul > li .created-since {
+	text-align: right;
+	font-style: italic;
+	font-size: smaller;
+}
+
+.edv-edposts-list .show-more {
+	font-style: italic;
+}
+.toggle-trigger.month-title {
+	font-variant:  small-caps;
+	font-weight: bold;
+	font-size: larger;
+	background-color: #e1e9f7;
+	padding-top: 10px;
+}
+body.colors-dark .toggle-trigger.month-title {
+	background-color: rgb(51, 51, 51);
+}
+
+.toggle-trigger.month-title::first-letter {
+	text-transform: uppercase  ;
+}
+.edv-edposts-list > ul > li .footer, .edv-edposts-list > ul > li .footer table {
+	font-size: 90%;
+	margin-top: 1em;
+    width: 100%;
+}
+.edv-edposts-list > ul > li .footer table tr{
+    border: none;
+}
+.edv-edposts-list > ul > li .footer table td{
+    white-space: nowrap;
+    border: none;
+}
+.edv-edposts-list > ul > li .footer td.post-edit {
+	width: 1px;/*Ajuste la cellule*/
+	padding-right: 14px;
+}
+.edv-edposts-list > ul > li .footer .trigger-collapser,
+.edv-edposts-list .toggle-trigger {
+	cursor: pointer;
+}
+
+.edv-edposts-list-header {
+	margin-bottom: 2em;
+}
+.edv-edposts-list-header table {
+	margin: 0;
+}
+.edv-edposts-list-header table tr,
+.edv-edposts-list-header table th {
+	border: none;
+}
+.edv-edposts-list-header table th {
+	width: 1px; /* autosize */
+	padding-right: 1em;
+	overflow-wrap: break-word;
+}
+.edv-edposts-list-header table td {
+	text-align: right;
+}
+.edv-edposts-list-header .toggle-trigger {
+	font-size: smaller;
+}
+.edv-edposts-list-header form {
+	background-color: #dddddd;
+}
+body.colors-dark .edv-edposts-list-header form {
+	background-color: #373733;
+}
+.edv-edposts-list-header form input[type="submit"] {
+	float: right;
+	font-size: smaller;
+}
+.edv-edposts-list-header form select {
+	height: 5em;
+	font-size: smaller;
+}
+.edv-edposts-list-header form input[type="checkbox"] {
+	margin-right: 0.2em;
+}
+.edv-edposts-list-header form label {
+	font-size: smaller;
+	font-weight: normal;
+	display: inline-block;
+	margin-right: 1em;
+	white-space: nowrap;
+}
+.edv-edposts-list-header form label[for] {
+	font-weight: bold;
+	display: block;
+}
+
+.edv-edposts-email *, .aevs-email * {
+	background-color: #FFFFFF ;
+	color: #000000 !important;
+}
+body.colors-dark .edv-edposts-email *, body.colors-dark .aevs-email * {
+	background-color: #FFFFFF;
+	color: #000000 !important;
+}

@@ -1,0 +1,113 @@
+
+/*
+ * Tabs
+ */
+#edv-tabs-nav {
+	border-bottom: 1px solid #aaa;
+	padding: 9px 15px 0 10px;
+	margin: 0;
+}
+
+#edv-tabs-nav + ul {
+	margin-top: 0;
+}
+
+#edv-tabs-nav li {
+	display: inline-block;
+	list-style: none;
+	border: 1px solid #ccc;
+	border-bottom: 1px solid #aaa;
+	padding: 0;
+	margin: 0 4px -1px;
+	background-color: #e4e4e4;
+}
+body.colors-dark #edv-tabs-nav li {
+	background-color: #1b1b1b;
+}
+
+#edv-tabs-nav li:hover {
+	background-color: #fff;
+}
+body.colors-dark #edv-tabs-nav li:hover {
+	background-color: #000;
+}
+
+#edv-tabs-nav li.ui-tabs-active,
+#edv-tabs-nav li.ui-tabs-active:hover {
+	border-top: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+	border-left: 1px solid #aaa;
+	border-bottom: 1px solid #f5f5f5;
+	background-color: #f5f5f5;
+}
+body.colors-dark #edv-tabs-nav li.ui-tabs-active,
+body.colors-dark #edv-tabs-nav li.ui-tabs-active:hover {
+	background-color: #444;
+}
+
+#edv-tabs-nav li a {
+	padding: 6px 10px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 30px;
+	color: #333;
+	text-decoration: none;
+}
+body.colors-dark #edv-tabs-nav li a {
+	color: #ccc;
+}
+
+#edv-tabs-nav li.ui-tabs-active a {
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+}
+body.colors-dark #edv-tabs-nav li.ui-tabs-active a {
+	color: #fff;
+}
+
+#edv-tabs-nav li a:hover {
+	color: #000;
+}
+body.colors-dark #edv-tabs-nav li a:hover {
+	background-color: #000;
+}
+
+#edv-tabs .edv-panel > div.config-error {
+	margin-bottom: 1.4em;
+}
+
+#edv-tabs-nav li.ui-tabs-active a .icon-in-circle {
+	display: none;
+}
+
+.wpcf7-form #edv-tabs .edv-panel h2 {
+	display: none;
+}
+
+#edv-tabs .edv-panel h2 {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 8px 0;
+	padding: 0;
+}
+
+#edv-tabs .edv-panel {
+	background-color: #f5f5f5;
+	border: 1px solid #aaa;
+	border-top: none;
+	padding: 16px;
+}
+body.colors-dark #edv-tabs .edv-panel {
+	background-color: #333;
+}
+
+#edv-tabs .form-table th {
+	width: 100px;
+}
+
+#edv-tabs .edv-panel fieldset legend {
+	line-height: 1.5;
+	margin: .6em 0 .4em;
+}

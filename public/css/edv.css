@@ -1,0 +1,454 @@
+/**
+ * ED20200326
+ * Feuille de styles pour Agenda partagé
+ */
+ 
+a:active, a:focus {
+	outline: none;
+}
+
+p.alerte, div.alerte {
+	border-style: solid;
+	border-color:orange;
+	padding: 5px;
+	border-radius: 2px;
+}
+p.info, div.info {
+	border-style: solid;
+	border-color:green;
+	padding: 5px;
+	border-radius: 2px;
+}
+
+.align-right {
+	text-align: right;
+}
+
+/* ED200318 "Fièrement propulsé par Word Press" */
+.site-info > a
+, .masquer
+{ display: none; }
+
+.edv-error-light {
+  font-size: smaller;
+  color: gray;
+  padding: 5px;
+  text-align: center;
+}
+body.colors-dark .edv-error-light {
+  color: rgb(208, 208, 208);
+}
+
+/* Masque la navigation
+ * Géré par code /hook on_navigation_markup_template_cb
+article.type-edpost ~ nav.post-navigation {
+	display: none;
+}*/
+
+.entry-content .edv-edpost-dates {
+	font-weight : bold;
+}
+
+.entry-content .edv-edpost,
+.entry-content .edv-covoiturage {
+	white-space: pre-line;
+	margin-bottom: 1.5em;
+}
+.entry-content .edv-edpost .nowrap
+, .entry-content .edv-edpost ul,
+.entry-content .edv-covoiturage .nowrap
+, .entry-content .edv-covoiturage ul {
+	white-space: normal;
+}
+
+.entry-content .edv-edpost-message-contact,
+.entry-content .edv-covoiturage-message-contact {
+	white-space: normal;
+}
+
+.entry-content .edv-edpost-description
+, .entry-content .edv-edpost-details
+, .entry-content .edv-covoiturage-description
+, .entry-content .edv-covoiturage-details {
+	background-color: #f7f7f7;
+	border-color: #9fa4a6;
+	border-style: solid;
+	border-width: thin;
+	color: #333;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	padding: 1em;	
+}
+body.colors-dark .entry-content .edv-edpost-description,
+.entry-content .edv-edpost-details,
+body.colors-dark .entry-content .edv-covoiturage-description,
+.entry-content .edv-covoiturage-details {
+	background-color: #272727;
+	color: rgb(238, 238, 238);
+}
+
+.entry-content .edv-edpost-details .entry-date,
+.entry-content .edv-covoiturage-details .entry-date {
+	font-size: small;
+	font-style: italic;
+	white-space: normal;
+	text-align: right;
+}
+
+.entry-content .edv-edpost-cree-depuis,
+.entry-content .edv-covoiturage-cree-depuis {
+  float: right;
+  font-style: italic;
+  font-size: smaller;
+}
+
+/*toggle shortcode*/
+.toggle-trigger {
+	margin: 0px !important;
+	font-size: 18px;
+	padding: 10px;
+	padding-left: 30px;
+	background-color: #F5F5F5;
+	background-image: url('../images/toggle-plus.png');
+	background-position: 10px center;
+	background-repeat: no-repeat;
+}
+body.colors-dark .toggle-trigger {
+	background-color: #252525;
+}
+
+.toggle-trigger a {
+	color: #333;
+	text-decoration: none;
+	display: block;
+}
+body.colors-dark .toggle-trigger a {
+	color: #CCC;
+}
+
+.toggle-trigger a:hover {
+	color: #0489B7;
+	text-decoration: none;
+}
+body.colors-dark .toggle-trigger a:hover {
+	color: #FA7628;
+}
+.toggle-trigger .wpcf7-spinner {
+	float: right;
+}
+
+.toggle-trigger.active{
+	background-image: url('../images/toggle-minus.png') !important;
+	background-position: 10px center;
+	background-repeat: no-repeat;
+}
+
+.toggle-container {
+	/* display: none; TODO hide on load before jQuery */
+	display: none;
+	overflow: hidden;
+	padding: 20px 10px;
+}
+.toggle-trigger.active + .toggle-container {
+	display: block;
+}
+
+label.textarea-rows-2 textarea {
+	max-height: 5em;
+}
+label.textarea-rows-3 textarea {
+	max-height: 6em;
+}
+label.textarea-rows-4 textarea {
+	max-height: 7em;
+}
+label.textarea-rows-5 textarea {
+	max-height: 8em;
+}
+
+.adgpevent-forbidden, .covoiturage-forbidden {
+	padding-left: 2em;
+}
+.adgpevent-forbidden ul > li, .covoiturage-forbidden ul > li {
+	margin-left: 1em;
+}
+.edv-title-link a {
+	float:right;
+	box-shadow: none !important;
+	text-decoration: none;
+	outline: none;
+}
+
+.adgpevent-forbidden form, .covoiturage-forbidden form {
+	display: inline-flex;
+}
+
+.edpost-edit-toolbar,
+.covoiturage-edit-toolbar {
+	text-align: right;
+}
+.edpost-edit-toolbar > .edpost-tool > *,
+.covoiturage-edit-toolbar > .covoiturage-tool > * {
+	float: right;
+	margin-left: 1em;
+}
+.edpost-edit-toolbar > .edpost-tool .dashicons-before,
+.covoiturage-edit-toolbar > .covoiturage-tool .dashicons-before {
+	margin-right: 3px;
+}
+.edpost-edit-toolbar > .edpost-tool .close-box,
+.covoiturage-edit-toolbar > .covoiturage-tool .close-box,
+.ajax_action-response .close-box {
+	float: right;
+}
+.ajax_action-response {
+	cursor: pointer;
+}
+.ajax_action_info {
+	text-align: center;
+}
+
+div.ajax_action-response {
+	border-style: solid;
+	border-color:orange;
+	padding: 5px;
+}
+
+input.wpcf7-form-control[name^="edp-date-"],
+input.wpcf7-form-control[name^="cov-date-"] {
+	width: 11em;
+}
+input.wpcf7-form-control[name^="edp-heure-"],
+input.wpcf7-form-control[name^="cov-heure-"] {
+	width: 5em;
+}
+input.wpcf7-form-control[name="cov-nb-places"] {
+	width: 11em;
+}
+
+.wpcf7-form table {
+	margin-bottom: 0px;
+}
+.wpcf7-form table tr {
+	border: none;
+}
+.wpcf7-form table td {
+	padding-bottom: 0px;
+	vertical-align: top;
+}
+.wpcf7-form table td:first-child {
+	width: 1px;
+}
+
+.wpcf7-form table td:nth-child(2) {
+	padding-left: 1em;
+}
+.wpcf7-form span.required {
+	color: red;
+}
+.wpcf7-form .next-radio-br + .wpcf7-form-control-wrap .wpcf7-list-item{
+	display: block;
+}
+.wpcf7-form label[for="nl-user-name"]{
+	margin-left: 1em;
+}
+input.wpcf7-form-control[name="nl-user-name"] {
+    display: inline;
+    width: auto;
+    margin-left: 1em;
+}
+.wpcf7-list-item input[name="nl-period"] + span.wpcf7-list-item-label {
+	font-weight: normal;
+}
+.wpcf7-list-item input[name="nl-period"]:checked + span.wpcf7-list-item-label {
+	font-weight: bold;
+}
+
+form.wpcf7-form .hidden {
+	display: none;
+}
+form.wpcf7-form .edposts-tax_titles {
+	margin-left: 1.2em;
+	cursor: pointer;
+}
+
+/** newsletter **/
+form.wpcf7-form.events_newsletter_register input.wpcf7-email {
+	display: inline-block;
+	width: auto;
+}
+ul.newsletter-change-nl {
+	list-style: none;
+	border: 1px solid gray;
+	margin-top: 2em;
+	padding-left: 1em;
+}
+ul.newsletter-change-nl p {
+	margin: 0;
+}
+
+
+.wpcf7-list-item input[type="radio"]:checked + span.wpcf7-list-item-label,
+div.labels-one-row label.radio-checked {
+	font-weight: bold;
+	text-decoration: underline;
+}
+.wpcf7-form-control.wpcf7-radio.no-label .wpcf7-list-item-label {
+	display: none;
+}
+div.labels-one-row label {
+	display: inline-block;
+}
+
+.entry-title span.cov-intention,
+.edv-covoiturages span.cov-intention {
+	border: 1px solid;
+	padding: 0 2px 0 2px;
+}
+.entry-title span.cov-intention-1,
+.edv-covoiturages span.cov-intention {
+	background-color: indianred;
+}
+.entry-title span.cov-intention-2,
+.edv-covoiturages span.cov-intention-2 {
+	background-color: darkcyan;
+}
+.entry-title span.cov-intention-3,
+.edv-covoiturages span.cov-intention-3 {
+	background-color: darkgoldenrod;
+}
+.entry-title span.cov-depart, .entry-title span.cov-arrivee,
+.edv-covoiturages span.cov-depart, .edv-covoiturages span.cov-arrivee {
+	font-variant-caps: small-caps;
+}
+.entry-title .title-prep,
+.edv-covoiturages .title-prep {
+	display: inline-block;
+	width: 2em;
+}
+
+.entry-title span.cov-nb-places,
+.edv-covoiturages span.cov-nb-places {
+	padding-left: 1.5em;
+}
+
+.wpcf7-form .swap-depart-arrivee {
+	float: right;
+	box-shadow: none !important;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.wpcf7-form .labels-one-row.cov-phone-show {
+	position: relative;
+	top: -2em;
+}
+.wpcf7-form .labels-one-row.cov-phone-show > p {
+	margin-bottom: 0;
+}
+
+.wpcf7-form input[name="cov-covsecret"]{
+	width: 8em;
+}
+
+#email4phone-title {
+	box-shadow: none !important;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+}
+#email4phone-form {
+	display: none;
+}
+#email4phone-title.active + #email4phone-form {
+	display: block;
+	margin-left: 3em;
+	padding: 6px;
+	border: 2px solid gray;
+}
+#email4phone-form form {
+	display: inline-flex;
+}
+
+/**
+ * Forum
+ */
+div.edv-forum-description {
+	white-space: pre-wrap;
+}
+article.use-edvforum + #comments > h2.comments-title {
+	display: none;
+}
+article.use-edvforum + #comments li.comment article {
+	border: #d1cde1 solid 5px;
+	margin-bottom: 1em;
+	padding: 5px;
+}
+body.colors-dark article.use-edvforum + #comments li.comment article {
+	border-color: #331440;
+}
+article.use-edvforum + #comments li.comment article .comment-content h3 {
+	font-weight: bold;
+	background-color: #d1cde1;
+	padding: 5px;
+}
+body.colors-dark article.use-edvforum + #comments li.comment article .comment-content h3 {
+	background-color: #331440;
+}
+
+article.use-edvforum + #comments li.comment article .comment-content > p {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+article.use-edvforum + #comments li.comment article .reply {
+	padding-left: 3em;
+}
+
+article.use-edvforum + #comments .comment-list .children {
+	margin-left: 1.5em;
+}
+
+article.use-edvforum + #comments .comment-list + #respond {
+	margin-top: 2em;
+	padding-top: 0.5em;
+	border-top: 1px solid gray;
+}
+article.use-edvforum + #comments article + #respond {
+	margin-bottom: 3em;  
+	margin-left: 4em;
+}
+article.use-edvforum + #comments #respond {
+	margin-top: 1em;
+}
+#commentform > .logged-in-as, #commentform > .comment-notes {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+#commentform > .logged-in-as a {
+	color: rgb(51, 51, 115);
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+body.colors-dark #commentform > .logged-in-as a {
+	color: lightblue;
+}
+
+#comments #reply-title a {
+	margin-left: 1em;
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	color: rgb(51, 51, 115);
+}
+body.colors-dark #comments #reply-title a {
+	color: lightblue;
+}
+
+#comments .comment-edv-actions {
+	margin-left: 1em;
+}
+#comments .comment-edv-actions a {
+	margin-left: 1em;
+}
+#comments .comment-edv-actions .mark_as_ended {
+	font-weight: bold;
+	color: red;
+}
